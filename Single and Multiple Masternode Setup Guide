@@ -13,9 +13,9 @@ rpcuser=ANYTHINGHERE
 rpcpassword=ANYTHINGHERE
 listen=1
 allowip=127.0.0.1
-port=21117
+port=5118
 masternode=1
-masternodeaddr=YourIP:21117
+masternodeaddr=YourIP:5118
 masternodeprivkey=PRIVATEKEYREPLACETHIS
 
 
