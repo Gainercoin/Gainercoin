@@ -1,0 +1,13 @@
+We have updated the wallet as we had to increase pre mine from 5% to 10%. This is done so that we can list on HitBTC or such huge exchanges. The exchanges want to have security funds and so the pre mine is needed. Also we will open the ICO again for just a few days so that more people can buy. Our Japanese local promoters were complaining that they did not got any coins to provide to their customers. In order to have more community, more people and more volume, this decision is taken. Also citing the huge demand for our coin. This is good for everyone. 
+
+Please update the wallet immediately, as from block ________ onwards, that is from right now, if you do not use new wallet, then the upcoming rewards will not be valid. This process is simple: 
+1. Close wallet
+2. Visit this folder at C:/users/***Your windows username***/appdata(hidden)/roaming/Gainercoin 
+3. Copy wallet.dat file as this file has all your coins in it. Paste this file on desktop or some folder
+4. Delete entire Gainercoin folder
+5. Delete the Gainercoin-qt (wallet)
+6. Download the new wallet from gainercoin.com
+7. Run the new wallet, then let it sync. Once sync is complete, you should close the wallet.
+8. Now Gainercoin folder will be created automatically in the computer. You should visit the folder """""C:/users/***Your windows username***/appdata(hidden)/roaming/Gainercoin 
+and then replace the wallet.dat file with your backed up wallet.dat file that has your coins in it.
+9. Open / Run the wallet and start to make new masternode if you have enough coins.
