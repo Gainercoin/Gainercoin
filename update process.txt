@@ -1,5 +1,5 @@
 We have updated the wallet as we had to increase pre mine from 5% to 10%. This is done so that we can list on HitBTC or such huge exchanges. The exchanges want to have security funds and so the pre mine is needed. 
-Please update your wallet to version 60026
+Please update your wallet to version 60026 otherwise the Masternode rewards or Staking rewards will be conflicted and deemed invalid
 
 Please update the wallet immediately, if you do not use new wallet, then the upcoming masternode-rewards or staking-rewards will not be valid. This process is simple: 
 1. Close wallet
