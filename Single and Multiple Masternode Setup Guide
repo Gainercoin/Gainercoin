@@ -13,7 +13,7 @@ rpcuser=ANYTHINGHERE
 rpcpassword=ANYTHINGHERE
 rpcallowip=127.0.0.1
 externalip=your_vps_ip_address
-rpcport=21117
+rpcport=5118
 listen=1
 server=1
 daemon=1
@@ -69,11 +69,15 @@ Now you can follow the same steps of single masternode guide
 
 rpcuser=ANYTHINGHERE
 rpcpassword=ANYTHINGHERE
+rpcallowip=127.0.0.1
+externalip=your_vps_ip_address
+rpcport=5118
 listen=1
-allowip=127.0.0.1
-port=21117
+server=1
+daemon=1
+port=5118
 masternode=1
-masternodeaddr=YOUR-IP:21117
+masternodeaddr=YourIP:5118
 masternodeprivkey=PRIVATEKEYREPLACETHIS
 
 8.Now save and close the config file.
