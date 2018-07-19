@@ -3518,16 +3518,18 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     int payeerewardpercent = 0;
     CTxIn vin;
     bool hasPayment = true;
+		bool fIsInitialDownload = IsInitialBlockDownload();
+		bool fIsWalletGracePeriod = IsWalletGracePeriod();
     if(bMasterNodePayment) {
         //spork
         if(!masternodePayments.GetBlockPayee(pindexPrev->nHeight+1, payee, vin)){
             CMasternode* winningNode = mnodeman.GetCurrentMasterNode(1);
-            if(winningNode){
+            if(winningNode && !fIsInitialDownload && !fIsWalletGracePeriod){
                 payee = GetScriptForDestination(winningNode->pubkey.GetID());
                 payeerewardaddress = winningNode->rewardAddress;
                 payeerewardpercent = winningNode->rewardPercentage;
             } else {
-                return error("CreateCoinStake: Failed to detect masternode to pay\n");
+				return error("CreateCoinStake: Failed to detect masternode to pay\n");
             }
         }
     }
